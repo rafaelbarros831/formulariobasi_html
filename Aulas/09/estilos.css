@@ -1,0 +1,35 @@
+/* Seletor Universal */
+
+*{
+    margin: 2;
+    padding: 10;
+    color: red;
+}
+
+/* Seletor Atributo */
+
+input[type="text"]{
+    width: 200px;
+    background-color: #CCC;
+    height: 40px;
+    border: none;
+}
+
+input[type="submit"]{
+    width: 50px;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Seletor CLASS */
+.texto-principal{color:blue; text-align: center;}
+.fundo-principal{background-color: chartreuse;}
+
+/* Seletor ID */
+#conteudo{
+    background-color: chartreuse;
+    padding: 20px;
+    color:blue;
+}
