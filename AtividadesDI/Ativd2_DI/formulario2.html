@@ -6,25 +6,128 @@
     <title>Formulário-2</title>
 </head>
 <body>
+
+<form action="">
     <fieldset id ="formulario2_id">
 
         <legend>Indentificação de Usuário</legend>
         <label for="nome">Nome:</label>
-        <input type="text" name="nome" id="nome_id">
+        <input type="text" name="nome" id="nome_id" placeholder="Nome Completo">
 
         <br>
         <br>
 
         <label for="senha">Senha:</label>
-        <input type="password" name="senha" id="senha_id">
+        <input type="password" name="senha" id="senha_id" placeholder="Digite a senha">
         
         <br>
         <br>
 
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email_id">
+        <input type="email" name="email" id="email_id" placeholder="digite o seu e-mail">
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Sexo:</legend>
+            <input type="radio" name="sexoM" id="masculino_id" value="masculino">
+            <label for="masculino_id">Masculino</label>
+            <br>
+            <input type="radio" name="sexoF" id="feminino_id" value="feminino">
+            <label for="feminino_id">Feminino</label>
+        </fieldset>
+
+        <br>
+
+        <label for="data_nascimento_id">Data de Nascimento</label>
+        <input type="date" name="data_nascimento" id="data_nascimento_id">
+
         <br>
 
     </fieldset>
+
+    <fieldset>
+
+        <legend>Endereço</legend>   
+
+        <br>
+
+        <label for="Logradouro_id">Logradouro:</label>
+        <input type="text" name="Logradouro" id="Logradouro_id" placeholder="Rua, Av, Bairro"><br><br>
+        <label for="Numero_id">Número:</label>
+        <input type="text" name="Numero" id="Numero_id" placeholder="Número" size="10"><br><br>
+        <label for="Estado_id">Estado:</label>
+        <select name="Estado" id="Estado_id">
+            
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP" selected>São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+
+        </select><br><br>
+
+        <label for="Cidade_id">Cidade:</label>
+        <input type="text" name="Cidade" id="Cidade_id" placeholder="Sua cidade"><br><br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+
+        <legend>Mensagem do Usuário</legend>
+        <br>
+
+        <label for="urgencia_id">Grau de Urgência:</label>
+       Min <input type="range" name="urgencia" id="urgencia_id" min="0" max="10" step="1"> Max 
+
+       <br>
+       <br>
+
+        <label for="mensagem_id">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem_id" cols="30" rows="5"></textarea>
+        <br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><b>Quero um produto</b></legend>
+        <br>
+
+        <input type="checkbox" name="produto" id="produto_id">
+        <label for="produto_id">Gostaria de adquirir um produto quando disponível.</label>
+        <br>
+        <br>
+
+        <label for="cor_id">Cor:</label>
+        <input type="color" name="cor" id="cor_id">
+        <br>
+        <br>
+
+        <label for="quantidade_id">Quantidade:</label>
+        <input type="number" name="quantidade" id="quantidade_id" min="1" value="1">
+        <br>
+        <br>
+
+        <label for="preco_id">Preço Total R$:</label>
+        <input type="text" name="preco" id="preco_id">
+        <br>
+        <br>
+
+    </fieldset>
+
+<br>
+
+    <input type="submit" value="Enviar">
+
+<br>
+
+</form>
+
 </body>
 </html>
